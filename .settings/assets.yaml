@@ -1,0 +1,216 @@
+name: Loop_JPetStore_UI
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Loop_JPetStore_UI/src
+        type: javaClasspath
+  - name: Browse_JPetStore.recdata
+  - name: Browse_JPetStore.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Browse_JPetStore.recdata
+        type: recsessionRecdata
+  - name: Browse_JPetStore.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0453803C172E0F130B33630336232
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Browse_JPetStore.recsession
+        type: testRecsession
+      - path: /Loop_JPetStore_UI/b_10_83_146_143.ma
+        type: test#moeb.applicationPackage
+  - name: Browse_JPetStore_1749476756331.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749476756331
+      tags: 
+      testId: A1F0453803C172E0F130B33630336232
+      testName: Browse_JPetStore
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Browse_JPetStore.testsuite
+        type: statsSessionTest
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756331.xmoebreport
+        type: statsSessionAsset
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756331_orch!system.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756331_orch!system.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756331_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756331_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Browse_JPetStore_1749476756520.executiondlr
+        type: statsSessionAsset
+  - name: Browse_JPetStore_1749476756331.xmoebreport
+  - name: Browse_JPetStore_1749476756331_orch!system.mstats
+  - name: Browse_JPetStore_1749476756331_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Browse_JPetStore_1749476756331_perf!localhost.mstats
+  - name: Browse_JPetStore_1749476756331_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Browse_JPetStore_1749476756520.executiondlr
+  - name: Buy_Cat.recdata
+  - name: Buy_Cat.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Cat.recdata
+        type: recsessionRecdata
+  - name: Buy_Cat.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0453927F8E200F130B33630336232
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Cat.recsession
+        type: testRecsession
+      - path: /Loop_JPetStore_UI/b_10_83_146_143.ma
+        type: test#moeb.applicationPackage
+  - name: Buy_Cat_1749477232636.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749477232636
+      tags: 
+      testId: A1F0453927F8E200F130B33630336232
+      testName: Buy_Cat
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Cat.testsuite
+        type: statsSessionTest
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232636.xmoebreport
+        type: statsSessionAsset
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232636_orch!system.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232636_orch!system.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232636_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232636_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Cat_1749477232810.executiondlr
+        type: statsSessionAsset
+  - name: Buy_Cat_1749477232636.xmoebreport
+  - name: Buy_Cat_1749477232636_orch!system.mstats
+  - name: Buy_Cat_1749477232636_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Cat_1749477232636_perf!localhost.mstats
+  - name: Buy_Cat_1749477232636_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Cat_1749477232810.executiondlr
+  - name: Buy_Dog.recdata
+  - name: Buy_Dog.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Dog.recdata
+        type: recsessionRecdata
+  - name: Buy_Dog.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.4.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F045387E905A40F130B33630336232
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Dog.recsession
+        type: testRecsession
+      - path: /Loop_JPetStore_UI/b_10_83_146_143.ma
+        type: test#moeb.applicationPackage
+  - name: Buy_Dog_1749476993411.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749476993411
+      tags: 
+      testId: A1F045387E905A40F130B33630336232
+      testName: Buy_Dog
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Dog.testsuite
+        type: statsSessionTest
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993411.xmoebreport
+        type: statsSessionAsset
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993411_orch!system.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993411_orch!system.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993411_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993411_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_1749476993587.executiondlr
+        type: statsSessionAsset
+  - name: Buy_Dog_1749476993411.xmoebreport
+  - name: Buy_Dog_1749476993411_orch!system.mstats
+  - name: Buy_Dog_1749476993411_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Dog_1749476993411_perf!localhost.mstats
+  - name: Buy_Dog_1749476993411_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Dog_1749476993587.executiondlr
+  - name: Buy_Dog_Cat.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.4.0
+    properties: 
+      description: 'Test(s): 
+
+	Buy_Cat
+
+	Buy_Dog
+
+'
+      name: Buy_Dog_Cat
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1F0453954A70610F130B33630336232
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Cat.testsuite
+        type: scheduleInvokedTest
+      - path: /Loop_JPetStore_UI/Buy_Dog.testsuite
+        type: scheduleInvokedTest
+  - name: Buy_Dog_Cat_1749477319391.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749477319391
+      tags: 
+      testId: A1F0453954A70610F130B33630336232
+      testName: Buy_Dog_Cat
+    dependencies: 
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat.testsuite
+        type: statsSessionTest
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319391.xmoebreport
+        type: statsSessionAsset
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319391_orch!system.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319391_orch!system.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319391_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319391_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Loop_JPetStore_UI/Buy_Dog_Cat_1749477319565.executiondlr
+        type: statsSessionAsset
+  - name: Buy_Dog_Cat_1749477319391.xmoebreport
+  - name: Buy_Dog_Cat_1749477319391_orch!system.mstats
+  - name: Buy_Dog_Cat_1749477319391_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Dog_Cat_1749477319391_perf!localhost.mstats
+  - name: Buy_Dog_Cat_1749477319391_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Buy_Dog_Cat_1749477319565.executiondlr
+  - name: b_10_83_146_143.ma
+    type: moeb.applicationPackage
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: Browse_JPetStore_Test_A1F0453803C172E0F130B33630336232.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Buy_Cat_Test_A1F0453927F8E200F130B33630336232.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Buy_Dog_Cat_CompoundTest_A1F0453954A70610F130B33630336232.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Buy_Dog_Test_A1F045387E905A40F130B33630336232.java
+            type: com.ibm.rational.test.lt.generatedCode
